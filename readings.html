@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>mycourse</title>
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
+		</script>
+		<script src="assets/js/script.js"></script>
+	</head>
+	<body>
+		<div id="sidebar-button">
+			<a id="nav-toggle">
+				<span></span>
+			</a>
+		</div>
+		<nav class = "sidebar-container">
+			<ul>
+				<li class="sidebar-item"><a href="./index.html">Syllabus</a></li>
+				<li class="sidebar-item"><a href="./todo.html">To-Do</a></li>
+				<li class="sidebar-item"><a href="./readings.html">Readings</a></li>
+			</ul>
+		</nav>
+		<div id="login-link">Sign In!</div>
+		<div id="login-container" class="modal-container">
+			<div id="login-overlay" class="overlay"></div>
+			<div id="login-box" class="input-fields">
+				<div class="header">Sign In!</div>
+				<div class="content">
+					<input type = "text" class = "input-field username" placeholder = "Enter Username"/>
+					<input type = "text" class = "input-field password" placeholder = "Enter Password"/>
+				</div>
+				<div class="footer">
+					<button type="button" id="submit" class="submit-button">Submit</button>
+					<button type="button" id="cancel" class="cancel-button">Cancel</button>
+				</div>
+			</div>
+		</div>
+		<div id="add-course-container" class="modal-container">
+			<div id="add-course-overlay" class="overlay"></div>
+			<div id="add-course-box" class="input-fields">
+				<div class="header">Add a Course</div>
+				<div class="content">
+					<input type = "text" class = "input-field username" placeholder = "Enter Course name"/>
+				</div>
+				<div class="footer">
+					<button type="button" id="submit" class="submit-button">Submit</button>
+					<button type="button" id="cancel" class="cancel-button">Cancel</button>
+				</div>
+			</div>
+		</div>
+		<div id="add-reading-container" class="modal-container">
+			<div id="add-reading-overlay" class="overlay"></div>
+			<div id="add-reading-box" class="input-fields">
+				<div class="header">Add a Reading</div>
+				<div class="content">
+					<input type = "text" class = "input-field reading name" placeholder = "Enter Reading Title"/>
+					<input type = "text" class = "input-field reading link" placeholder = "Entrer Reading Link"/>
+					<input type = "text" class = "input-field reading date" placeholder = "Enter Reading Date"/>
+				</div>
+				<div class="footer">
+					<button type="button" id="submit" class="submit-button">Submit</button>
+					<button type="button" id="cancel" class="cancel-button">Cancel</button>
+				</div>
+			</div>
+		</div>
+		<div id="body-container">
+			<div id="site-title">mycourse
+			</div>
+			<div id="site-logo">
+			</div>
+			<div class="tabs">
+				<div class="tab-container">
+					<ul class="tab-links">
+						<li class="active"><a href="#tab1">Pol Econ 101</a></li>
+						<li><a href="#tab2">Pub Pol 103</a></li>
+						<li><a href="#tab3">Film 128</a></li>
+						<li id="add-course"><a href="#tab4">+</a></li>
+					</ul>
+				</div>
+				<div class="tab-content">
+					<div id="tab1" class="tab active">
+						<div class="list-item">
+							<div class="list-item-header">April 25, 2016</div>
+							<div class="list-item-content">
+								<p><a href="assets/pdf/demanddoctor.pdf" target="_blank">The Demand Doctor</a></p>
+							</div>
+						</div>
+						<div class="list-item">
+							<div class="list-item-header">April 26, 2016</div>
+							<div class="list-item-content">
+								<p><a href="assets/pdf/buildingafin.pdf" target="_blank">Building a Financial Structure for a More Stable and Equitable Economy</a></p>
+							</div>
+						</div>
+						<div class="list-item">
+							<div class="list-item-header">April 27, 2016</div>
+							<div class="list-item-content">
+								<p><a href="assets/pdf/themonetary.pdf" target="_blank">The Monetary System</a></p>
+							</div>
+						</div>
+						<div class="add-list-item">+
+						</div>
+					</div>
+					<div id="tab2" class="tab">
+						<div class="list-item">
+							<div class="list-item-header">April 25, 2016</div>
+							<div class="list-item-content">
+								<p><a href="assets/pdf/debtandtheracial.pdf" target="_blank">Debt and the Racial Wealth Gap</a></p>
+							</div>
+						</div>
+						<div class="list-item">
+							<div class="list-item-header">April 26, 2016</div>
+							<div class="list-item-content">
+								<p><a href="assets/pdf/injobhunt.pdf" target="_blank">In Job Hunt, College Degree Can't Close Racial Gap</a></p>
+							</div>
+						</div>
+						<div class="list-item">
+							<div class="list-item-header">April 27, 2016</div>
+							<div class="list-item-content">
+								<p><a href="assets/pdf/rethinking.pdf" target="_blank">Rethinking Affirmative Action</a></p>
+							</div>
+						</div>
+						<div class="add-list-item">+</div>
+					</div>
+					<div id="tab3" class="tab">
+						<div class="list-item">
+							<div class="list-item-header">April 25, 2016</div>
+							<div class="list-item-content">
+								<p><a href="assets/pdf/ruby.pdf" target="_blank">The Image Mirrored: Reflexivity and the Documentary Film</a></p>
+							</div>
+						</div>
+						<div class="list-item">
+							<div class="list-item-header">April 26, 2016</div>
+							<div class="list-item-content">
+								<p><a href="assets/pdf/block.pdf" target="_blank">The Truth about No Lies</a></p>
+							</div>
+						</div>
+						<div class="list-item">
+							<div class="list-item-header">April 27, 2016</div>
+							<div class="list-item-content">
+								<p><a href="assets/pdf/fuentes.pdf" target="_blank">Extracts from an Imaginary Interview</a></p>
+							</div>
+						</div>
+						<div class="add-list-item">+</div>
+					</div>
+					<div id="tab4" class="tab">
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

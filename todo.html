@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>mycourse</title>
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
+		</script>
+		<script src="assets/js/script.js"></script>
+	</head>
+	<body>
+		<div id="sidebar-button">
+			<a id="nav-toggle">
+				<span></span>
+			</a>
+		</div>
+		<nav class = "sidebar-container">
+			<ul>
+				<li class="sidebar-item"><a href="./index.html">Syllabus</a></li>
+				<li class="sidebar-item"><a href="./todo.html">To-Do</a></li>
+				<li class="sidebar-item"><a href="./readings.html">Readings</a></li>
+			</ul>
+		</nav>
+		<div id="login-link">Sign In!</div>
+		<div id="login-container" class="modal-container">
+			<div id="login-overlay" class="overlay"></div>
+			<div id="login-box" class="input-fields">
+				<div class="header">Sign In!</div>
+				<div class="content">
+					<input type = "text" class = "input-field username" placeholder = "Enter Username"/>
+					<input type = "text" class = "input-field password" placeholder = "Enter Password"/>
+				</div>
+				<div class="footer">
+					<button type="button" id="submit" class="submit-button">Submit</button>
+					<button type="button" id="cancel" class="cancel-button">Cancel</button>
+				</div>
+			</div>
+		</div>
+		<div id="add-course-container" class="modal-container">
+			<div id="add-course-overlay" class="overlay"></div>
+			<div id="add-course-box" class="input-fields">
+				<div class="header">Add a Course</div>
+				<div class="content">
+					<input type = "text" class = "input-field username" placeholder = "Enter Course name"/>
+				</div>
+				<div class="footer">
+					<button type="button" id="submit" class="submit-button">Submit</button>
+					<button type="button" id="cancel" class="cancel-button">Cancel</button>
+				</div>
+			</div>
+		</div>
+		<div id="add-list-item-container" class="modal-container">
+			<div id="add-list-item-overlay" class="overlay"></div>
+			<div id="add-list-item-box" class="input-fields">
+				<div class="header">Add a Task</div>
+				<div class="content">
+					<input type = "text" class = "input-field task" placeholder = "Enter Task"/>
+					<input type = "text" class = "input-field date" placeholder = "Enter Date"/>
+				</div>
+				<div class="footer">
+					<button type="button" id="submit" class="submit-button">Submit</button>
+					<button type="button" id="cancel" class="cancel-button">Cancel</button>
+				</div>
+			</div>
+		</div>
+		<div id="body-container">
+			<div id="site-title">mycourse
+			</div>
+			<div id="site-logo">
+			</div>
+			<div class="tabs">
+				<div class="tab-container">
+					<ul class="tab-links">
+						<li class="active"><a href="#tab1">Pol Econ 101</a></li>
+						<li><a href="#tab2">Pub Pol 103</a></li>
+						<li><a href="#tab3">Film 128</a></li>
+						<li id="add-course"><a href="#tab4">+</a></li>
+					</ul>
+				</div>
+				<div class="tab-content">
+					<div id="tab1" class="tab active">
+						<div class="list-item">
+							<div class="list-item-header">April 25, 2016</div>
+							<div class="list-item-content">
+								<p>Read David Harvey</p>
+							</div>
+						</div>
+						<div class="list-item">
+							<div class="list-item-header">April 26, 2016</div>
+							<div class="list-item-content">
+								<p>Read Robert Reich</p>
+							</div>
+						</div>
+						<div class="list-item">
+							<div class="list-item-header">April 27, 2016</div>
+							<div class="list-item-content">
+								<p>Go to PE 101 office hours @ 2:30pm</p>
+							</div>
+						</div>
+						<div class="add-list-item">+
+						</div>
+					</div>
+					<div id="tab2" class="tab">
+						<div class="list-item">
+							<div class="list-item-header">April 25, 2016</div>
+							<div class="list-item-content">
+								<p>Read NYT article</p>
+							</div>
+						</div>
+						<div class="list-item">
+							<div class="list-item-header">April 26, 2016</div>
+							<div class="list-item-content">
+								<p>Read Washington Post article</p>
+							</div>
+						</div>
+						<div class="list-item">
+							<div class="list-item-header">April 27, 2016</div>
+							<div class="list-item-content">
+								<p>Send GSI an email about letter of recommendation</p>
+							</div>
+						</div>
+						<div class="add-list-item">+</div>
+					</div>
+					<div id="tab3" class="tab">
+						<div class="list-item">
+							<div class="list-item-header">April 25, 2016</div>
+							<div class="list-item-content">
+								<p>Write film response paper on "Looking for Langston"</p>
+							</div>
+						</div>
+						<div class="list-item">
+							<div class="list-item-header">April 26, 2016</div>
+							<div class="list-item-content">
+								<p>Go to Film 128 office hours</p>
+							</div>
+						</div>
+						<div class="list-item">
+							<div class="list-item-header">April 27, 2016</div>
+							<div class="list-item-content">
+								<p>Go to film screening at 7pm</p>
+							</div>
+						</div>
+						<div class="add-list-item">+</div>
+					</div>
+					<div id="tab4" class="tab">
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
